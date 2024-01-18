@@ -50,11 +50,6 @@ internal class Program
                 results[sum]++;
             }
 
-            // Additional probabilities for specific combinations
-            results[2] += results[12]; // 1+1 and 6+6
-            results[3] += results[11] + results[9]; // 2+1, 1+2 and 3+3, 4+5, 5+4
-            results[7] += results[6] + results[5] + results[4] + results[3] + results[2] + results[1]; // 1+6, 2+5, 3+4, 4+3, 5+2, 6+1
-
             return results;
         }
     }
